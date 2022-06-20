@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /* Create four equal columns that floats next to each other */
+ .column {
+   float: left;
+   width: 25%;
+   padding: 10px;
+   height: 150px; 
+   border:5px solid teal;
+ }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 100px) {
+   .column {
+     width: 30%;
+   }
+ }
+ </style>
+ </head>
+ <body>
+ 
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Opx</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index 2.html">About</a></li>
+            <li class="services">
+              <a href="index 1.html">Services</a>
+            <li><a href="index 3.html">Staff</a></li>
+       
+          </div>
+        </ul>
+      </nav>
+   
+   <br></br>
+ 
+ <div class="row">
+   <div class="column" style="white">
+       <center><img src=data:image/png;base64,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 class="img-rounded" alt="Cinque Terre" width="100" height="40"></center>
+     <h2><center>24/7 calling unit!</center></h2>
+   </div>
+   <div class="column" style="white;">
+       <center><img src=https://cdn4.vectorstock.com/i/1000x1000/94/18/doctor-icon-medical-consultation-female-physician-vector-18769418.jpg class="img-rounded" alt="Cinque Terre" width="100" height="40"></center>
+ 
+     <h2><center>24/7 therpists!</center></h2>
+   </div>
+   <div class="column" style="white;">
+        <center><img src=https://icon-library.com/images/ambulance-icon-png/ambulance-icon-png-25.jpg ="img-rounded" alt="Cinque Terre" width="100" height="40"></center>
+     <h2><center>24/7 ambulance!</center></h2>
+   </div>
+   <div class="column" style="white">
+       <center><img src=https://cdn3.vectorstock.com/i/1000x1000/21/97/fast-food-business-black-icon-sign-vector-23012197.jpg class="img-rounded" alt="Cinque Terre" width="100" height="40"></center>
+     <h2><center>24/7 Diet experts!</center></h2>
+
+   </div>
+ </div>
+ <br></br>
+
+ <h1><center>Blood demand</center></h1>
+
+<p><left>The American Red Cross states that in the United States, someone needs blood every two seconds, and someone needs platelets every thirty seconds. There is not a consistent demand for each blood type. One type of blood being in stock does not guarantee that another type is. Blood banks may have some units in stock but lack others, ultimately causing the patients that need units for specific blood types to have delayed or canceled procedures. Additionally, every year there is an increase of around 5-7% for transfusions without an increase of donors to balance it as well as a growing population of elderly people that will need more transfusions in the future without a predicted increase in donations[96] to reflect those growing numbers. This was supported in 1998 where blood donations to the Red Cross increased to 8%, totaling 500,000 units but hospitals' need for donations increased by 11%.[97]
+
+    Blood donations tend to always be high in demand with numerous accounts repeatedly stating periodic shortages over the decades. However, this trend is disrupted during national disasters. The trend demonstrates that people are donating the most during catastrophes when, arguably, donations are not as needed compared to periods without disasters. From 1988 to 2013, it has been reported that during every national disaster, there was a surplus of donations; a surplus that consisted of over 100 units. One of the most notable examples of this pattern was the September 11th attacks. A study observed that compared to the four weeks before September 11, there was an estimated increase of 18,700 donations from first-time donors for the first week after the attack: 4,000 was the average of donations from first-time donors before the attack which increased to about 22,700 donations; while repeat donors increased their donations by 10,000 per week: initially, donations were estimated to be around 16,400 which increased to 26,400 donations after September 11.[100] Therefore, in the first week after the attack on 9/11, there was an overall estimated 28,700 increase in donations compared to the average weekly donations made four weeks prior to the attack. Increases in donations were observed in all blood donation centers, beginning on the day of the attack.[100] While blood donations were above average after the first few weeks following 9/11, the number of donations fell from an estimated 49,000 donations in the first week to 26,000–28,000 donations between the second and fourth weeks after 9/11.[100][98] Despite the substantial increase of donors, the rate that first-time donors would become repeat donors were the same before and after the attack.
+    
+    The limited storage time means that it is difficult to have a stockpile of blood to prepare for a disaster. The subject was discussed at length after the September 11 attacks in the United States, and the consensus was that collecting during a disaster was impractical and that efforts should be focused on maintaining an adequate supply at all times. Blood centers in the U.S. often have difficulty maintaining even a three-day supply for routine transfusion demands.</left></p>
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+ box-sizing: border-box;
+}
+
+.row {
+ display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+ flex: 33.33%;
+ padding: 5px;
+}
+body{
+
+}
+h1::first-line{
+font-family: Trebuchet MS;
+color:rgb(0, 191, 191);
+text-shadow: 2px 3px 4px  black;
+}
+
+h1{
+color: rgb(0, 191, 191);
+}
+
+</style>
+
